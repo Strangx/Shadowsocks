@@ -1,0 +1,2 @@
+[Script]
+network-changed script-path= https://cdn.jsdelivr.net/gh/Strangx/Shadowsocks@strange/Scripts/running-mode.js, tag=SSID Operating Mode
