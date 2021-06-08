@@ -1,0 +1,5 @@
+[Script]
+http-response ^https:\/\/api\.textnow\.me\/api2.0\/users\/.* script-path=https://raw.githubusercontent.com/Strangx/Loon/main/Textnow.js, requires-body=true, timeout=10, tag=TextNow
+
+[MITM]
+hostname = api.textnow.me
