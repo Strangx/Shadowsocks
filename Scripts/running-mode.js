@@ -1,11 +1,11 @@
 let config = {
    global_direct: "𝐃𝐢𝐫𝐞𝐜𝐭",
    global_proxy: "𝐏𝐫𝐨𝐱𝐲",
-   silence: false,
-   cellular: "RULE",
-   wifi: "RULE",
-   all_direct: ["WRT32X", "WRT32Y"],
-   all_proxy: ["Yin Yin”],
+   silence: false, // Whether to run silently, the default is false
+   cellular: "RULE", // The mode under cellular data, RULE stands for rule mode, PROXY stands for global proxy, and DIRECT stands for global direct connection
+   wifi: "RULE", // the default mode under wifi
+   all_direct: ["WRT32X", "WRT32X Extreme"], // Specify the global direct connection wifi name
+   all_proxy: [Yin Yin], // Specify the wifi name of the global proxy
    whitelist: ["𝐏𝐨𝐫𝐧𝐇𝐮𝐛", "𝗧𝗶𝗸𝗧𝗼𝗸"],
  };
 
@@ -21,6 +21,7 @@ if (boxConfig) {
   config.all_proxy = listify(config.all_proxy);
   config.whitelist = listify(config.whitelist);
 }
+
 
 // get current decisions
 let groups, ssid;
