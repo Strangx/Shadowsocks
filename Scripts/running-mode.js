@@ -5,7 +5,7 @@ let config = {
    cellular: "RULE", // The mode under cellular data, RULE stands for rule mode, PROXY stands for global proxy, and DIRECT stands for global direct connection
    wifi: "RULE", // the default mode under wifi
    all_direct: ["WRT32X", "WRT32X Extreme"], // Specify the global direct connection wifi name
-   all_proxy: [], // Specify the wifi name of the global proxy
+   all_proxy: [Yin Yin], // Specify the wifi name of the global proxy
    whitelist: ["𝐏𝐨𝐫𝐧𝐇𝐮𝐛", "𝗧𝗶𝗸𝗧𝗼𝗸"],
  };
 
@@ -136,9 +136,9 @@ function getSSIDMode(ssid) {
 
 function lookupOutbound(mode) {
   return {
-    RULE: "📝 Rule Mode",
-    PROXY: "🌐 Global Proxy Mode",
-    DIRECT: "⚠️ Global Direct Connection Mode",
+    RULE: "🎃 Rule Mode",
+    PROXY: "🌏 Global Proxy Mode",
+    DIRECT: "🌑 Global Direct Connection Mode",
   }[mode];
 }
 
