@@ -1,16 +1,5 @@
-[General]
-
-dns-server = ${servers.join(", ")}
-always-real-ip = link-ip.nextdns.io
-
-[Rule]
-
-DOMAIN-KEYWORD,nextdns,DIRECT
-
-[Host]
-
-link-ip.nextdns.io = server:${servers[0]}
-
 [Script]
+NextDNS=type=http-request,pattern=https:\/\/next\.dns,script-path=https://raw.githubusercontent.com/Strangx/Shadowsocks/strange/Plugin/NextDNS/gen-module.js
 
-network-changed script-path=https://raw.githubusercontent.com/Strangx/Shadowsocks/strange/Plugin/NextDNS/next-dns.js
+[MITM]
+hostname=%APPEND% next.dns
