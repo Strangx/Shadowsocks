@@ -1,5 +1,7 @@
 [Script]
-NextDNS=type=http-request,pattern=https:\/\/next\.dns,script-path=https://raw.githubusercontent.com/Strangx/Shadowsocks/strange/Plugin/NextDNS/gen-module.js
+
+http-request https:\/\/next\.dns script-path=https://raw.githubusercontent.com/Strangx/Shadowsocks/strange/Plugin/NextDNS/gen-module.js, timeout=10, tag=NextDNS
 
 [MITM]
+
 hostname=%APPEND% next.dns
