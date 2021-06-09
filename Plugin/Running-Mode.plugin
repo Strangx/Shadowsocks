@@ -1,2 +1,2 @@
 [Script]
-network-changed script-path= https://raw.githubusercontent.com/Strangx/Shadowsocks/strange/Scripts/running-mode.js, tag=SSID Operating Mode
+network-changed script-path= https://gist.githubusercontent.com/NobyDa/e1f82ee2aa21c3958d8a7ce69ac27827/raw/WiFi-Firewall.js, tag=Firewall
